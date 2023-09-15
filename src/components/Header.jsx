@@ -1,6 +1,4 @@
-import React from "react";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,7 +6,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../logo.png";
 
 function Header() {
-
     return (
         <Navbar collapseOnSelect expand="lg" className="d-flex align-items-center justify-content-center text-center">
         <Container style={{display: "flex"}}  className="d-flex justify-content-center">
@@ -16,7 +13,7 @@ function Header() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#features">About</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
                 <NavDropdown title="Resources" id="collapsible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
@@ -25,22 +22,20 @@ function Header() {
                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">
-                        Separated link
+                        About Online Poker
                     </NavDropdown.Item>
                 </NavDropdown>
-                <Col className="d-flex align-items-center">
-                    <div id="logo-wrapper">
-                        <img src={Logo} id="logo" alt="Logo"></img>
-                    </div>
-                </Col>
-                <Col>
-                    <Row className="flex-nowrap">
-                        <Navbar.Brand href="#home">BigBadBabar</Navbar.Brand>
-                    </Row>
-                    <Row className="flex-nowrap">
-                        <p id="brand-slogan">Online Poker Resources</p>
-                    </Row>
-                </Col>
+                {/* <Col className="d-flex align-items-center">
+                    <Row className="flex-nowrap"> */}
+                        <Navbar.Brand href="/">
+                            <div id="logo-wrapper">
+                                <img src={Logo} id="logo" alt="Logo"></img>
+                            </div>
+                            <div id="title-wrapper">
+                                <p id="brand-name">BigBadBabar</p>
+                                <p id="brand-slogan">Online Poker Resources</p>
+                            </div>
+                        </Navbar.Brand>
                 <Nav.Link href="#pricing">Good Stuff</Nav.Link>
                 <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
