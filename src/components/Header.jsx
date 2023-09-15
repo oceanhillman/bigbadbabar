@@ -1,64 +1,53 @@
 import React from "react";
-import logo from "../logo.png";
-import NavDropdown from "./NavDropdown";
-import NavItem from "./NavItem";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from "../logo.png";
 
 function Header() {
 
-    const onlinePokerLinks = [
-        {
-            title: "Ignition Casino",
-            url: "/"
-        },
-        {
-            title: "America's Cardroom",
-            url: "/"
-        },
-        {
-            title: "SwC Poker",
-            url: "/"
-        }
-    ];
-    
     return (
-        <header>
-            <nav className="flex items-center justify-between flex-wrap p-6">
-                <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <img src={logo} width="64" height="64" alt="Logo"/>
-                    <span className="font-semibold text-xl tracking-tight">BigBadBabar</span>
-                </div>
-                <div className="block lg:hidden">
-                    <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                    <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                    </button>
-                </div>
-                <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div className="text-sm lg:flex-grow">
-                
-                    <NavItem 
-                        title="Home"
-                        url="/"
-                    />
-                    <NavDropdown 
-                        title="Online Poker" 
-                        listItems={onlinePokerLinks}
-                    />
-                    <NavDropdown 
-                        title="Online Poker" 
-                        listItems={onlinePokerLinks}
-                    />
-                    <NavItem
-                        title="Good Stuff"
-                        url="/"
-                    />
-                    <NavItem
-                        title="Contact"
-                        url="/"
-                    />
+        <Navbar collapseOnSelect expand="lg" className="d-flex align-items-center justify-content-center text-center">
+        <Container style={{display: "flex"}}  className="d-flex justify-content-center">
+        <Row>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+                <Nav.Link href="#features">About</Nav.Link>
+                <NavDropdown title="Resources" id="collapsible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                        Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">
+                        Separated link
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <Col className="d-flex align-items-center">
+                    <div id="logo-wrapper">
+                        <img src={Logo} id="logo" alt="Logo"></img>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </Col>
+                <Col>
+                    <Row className="flex-nowrap">
+                        <Navbar.Brand href="#home">BigBadBabar</Navbar.Brand>
+                    </Row>
+                    <Row className="flex-nowrap">
+                        <p id="brand-slogan">Online Poker Resources</p>
+                    </Row>
+                </Col>
+                <Nav.Link href="#pricing">Good Stuff</Nav.Link>
+                <Nav.Link href="#pricing">Contact</Nav.Link>
+            </Nav>
+            </Navbar.Collapse>
+            </Row>
+        </Container>
+        </Navbar>
     );
 }
 
