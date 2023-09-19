@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import PageBanner from "../components/PageBanner";
 import Testimonial from "../components/Testimonial";
 
@@ -26,6 +27,7 @@ function Home() {
                 ]}
 
             />
+            <Testimonial />
             <PageBanner
                 title={"What's an Affiliate?"}
                 content={[
@@ -35,7 +37,16 @@ function Home() {
                     "I've been around for a while and my reputation is important to me. Let's work together!"
                 ]}
             />
-            <Testimonial />
+            <PageBanner
+                title={"Call to action"}
+                content={[
+                    "Like a mailing list or a contact form"
+                ]}
+            />
+            <div className="container flex mx-auto justify-content-center mb-5">
+                <input type="text" placeholder="abcdefghijklmnop"></input>
+            </div>
+            <Footer />
         </React.Fragment>
         
     );
