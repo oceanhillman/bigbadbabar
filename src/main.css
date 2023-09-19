@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tauri&display=swap');
+
+@layer base {
+  body {
+    @apply !bg-gradient-to-b from-emerald-800 to-emerald-700;
+  }
+}
 
 body {
   margin: 0;
@@ -12,30 +20,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1089%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(149%2c 145%2c 140%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c523.663C96.975%2c512.954%2c172.521%2c445.89%2c262.83%2c408.971C378.416%2c361.718%2c529.33%2c375.613%2c605.046%2c276.315C681.648%2c175.856%2c679.586%2c28.83%2c645.44%2c-92.8C613%2c-208.355%2c519.598%2c-294.709%2c424.268%2c-367.63C341.929%2c-430.614%2c237.262%2c-441.409%2c140.631%2c-478.946C32.877%2c-520.804%2c-64.028%2c-627.836%2c-176.467%2c-600.991C-288.549%2c-574.232%2c-335.646%2c-442.693%2c-402.958%2c-349.165C-464.207%2c-264.061%2c-535.667%2c-182.941%2c-551.888%2c-79.35C-568.21%2c24.886%2c-536.328%2c128.946%2c-492.881%2c225.091C-449.301%2c321.529%2c-393.5%2c416.621%2c-302.984%2c471.452C-213.517%2c525.648%2c-103.97%2c535.144%2c0%2c523.663' fill='%238e8a85'%3e%3c/path%3e%3cpath d='M1440 1077.406C1549.634 1069.979 1665.784 1113.946 1762.6100000000001 1061.991 1861.62 1008.864 1909.142 897.6179999999999 1960.914 797.893 2015.1889999999999 693.346 2086.651 586.033 2070.258 469.383 2053.853 352.64599999999996 1968.5700000000002 254.57799999999997 1874.564 183.44799999999998 1790.221 119.62900000000002 1674.274 135.611 1576.343 95.65899999999999 1462.639 49.273000000000025 1377.1970000000001-83.66300000000001 1255.249-69.20500000000004 1134.2640000000001-54.86099999999999 1059.929 69.67599999999999 985.028 165.764 913.368 257.695 834.691 356.156 832.831 472.702 831.031 585.532 933.273 667.4929999999999 975.352 772.198 1020.251 883.922 987.381 1041.587 1088.02 1107.692 1188.481 1173.681 1320.08 1085.53 1440 1077.406' fill='%239c9894'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1089'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-
-  height: 100vh;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.navbar {
-  background-color: #35654D;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
 }
 
 .nav-link, .nav-item {
@@ -48,10 +37,8 @@ code {
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 8px;
-  font-family: "Lato";
   font-size: 20px !important;
   font-weight: bolder !important;
-  color: white !important; 
 }
 
 .nav-link:hover {
@@ -59,9 +46,7 @@ code {
 }
 
 .dropdown-item {
-  font-family: "Lato" !important;
   font-size: 16px;
-  color: white !important;
 }
 
 .dropdown-item:hover {
@@ -75,39 +60,32 @@ code {
   background-color: #477e63 !important;
 }
 
-#title-wrapper {
-  display: inline-block;
-}
-
-#logo-wrapper {
-  display: inline-block;
-}
-
-#logo {
-  width: 80px;
-  height: 80px;
+.carousel {
+  background-color: rgba(0, 0, 0, 0.369);
 }
 
 #brand-name {
   position: relative;
-  font-family: "Fugaz One";
+
   font-size: 34px !important;
   font-weight: bolder !important;
   letter-spacing: 2px;
-  color: white !important;
   margin-bottom: 0px;
   z-index: 1
 }
 
 #brand-slogan {
   position: relative;
-  font-family: "Courgette";
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  color: rgb(255, 253, 119);
+  color: #35654D;
   margin-top: -18px;
   margin-bottom: 0px;
   margin-left: -5px;
   z-index: 0;
+}
+
+#collapsible-nav-dropdown {
+  color: white;
 }
