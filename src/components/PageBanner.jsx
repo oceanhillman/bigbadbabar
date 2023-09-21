@@ -7,8 +7,8 @@ function PageBanner(props) {
     );
 
     return(
-        <div className="container mx-auto my-5 py-6 text-dark">
-            <div class="columns-lg" className="mx-40 text-center">
+        <div className="my-5 py-5 text-almost-white bg-dark bg-opacity-50">
+            <div className="text-center">
                 <h1 className="pb-3 font-title font-bold">
                     {props.title}
                 </h1>
