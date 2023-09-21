@@ -14,7 +14,12 @@ module.exports = {
       current: 'currentColor',
       //"green": "#35654D",
       "shadow": "#272727",
-      "light-shadow": "#606060"
+      "light-shadow": "#606060",
+      "cloudy": "#DEF2F1",
+      "almost-white": "#FEFFFF",
+      "dark": "#17252A",
+      "keppel": "#3AAFA9",
+      "myrtle": "#2B7A78",
     },
     fontFamily: {
       "brand": "'Fugaz One'",
