@@ -14,7 +14,7 @@ function Footer() {
       };
 
     return (
-        <footer className="absolute inset-x-0 py-4 bg-shadow">
+        <footer className="absolute inset-x-0 py-4 bg-dark">
         <div className="container mx-auto mb-2 flex items-center justify-content-center">
             <span className="cursor-pointer font-nav no-underline text-white" onClick={scrollToTop}>
                 Back to top
