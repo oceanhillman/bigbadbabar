@@ -6,12 +6,19 @@ import telegramIcon from "../telegram-icon.svg";
 function Footer() {
     const currentYear = new Date().getFullYear();
 
+    function scrollToTop() {
+        window.scrollTo({
+          top: 0, 
+          behavior: "smooth"
+        });
+      };
+
     return (
         <footer className="absolute inset-x-0 py-4 bg-shadow">
         <div className="container mx-auto mb-2 flex items-center justify-content-center">
-            <a className="font-nav no-underline text-white" href="/">
+            <span className="cursor-pointer font-nav no-underline text-white" onClick={scrollToTop}>
                 Back to top
-            </a>
+            </span>
         </div>
         <div className="container mx-auto my-5 flex items-center justify-content-center">
             <SocialButton
