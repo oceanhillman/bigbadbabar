@@ -1,7 +1,7 @@
 import SocialButton from "./SocialButton";
-import xIcon from "../x-icon.svg";
-import skypeIcon from "../skype-icon.svg";
-import telegramIcon from "../telegram-icon.svg";
+import xIcon from "../images/x-icon.svg";
+import skypeIcon from "../images/skype-icon.svg";
+import telegramIcon from "../images/telegram-icon.svg";
 
 function Footer() {
     const currentYear = new Date().getFullYear();

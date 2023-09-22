@@ -1,9 +1,9 @@
-import Logo from "../logo.png";
+import Logo from "../images/logo.png";
 
 function Brand() {
     return (
         <a href="/" className="flex items-center no-underline">
-            <div>
+            <div className="w-20 h-20">
                 <img className="w-20 h-20" src={Logo} id="logo" alt="Logo"></img>
             </div>
             <div>
