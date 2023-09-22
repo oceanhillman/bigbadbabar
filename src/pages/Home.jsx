@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import PageBanner from "../components/PageBanner";
+import ActionBanner from "../components/ActionBanner";
 import Testimonial from "../components/Testimonial";
 import TestimonialCard from "../components/TestimonialCard";
 import Informational from "../components/Informational";
@@ -11,16 +11,17 @@ function Home() {
     return (
         <React.Fragment>
             <Header />
-            <PageBanner 
+            <ActionBanner 
                 title={"Welcome!"}
                 content={[
                     "Welcome to the site. It's 2023 and we're still doing this internet poker thing!",
                     "You've come to the right place for info and resources. I've been at this since 2006 and I know what's up.",
                     "We've got you covered with classic sites and new offerings.",
-                    "Please use the side buttons to find what you need, and you can always contact me anytime!"
                 ]}
+                call="Contact me!"
+                actionURL="/contact"
             />
-            <div className="grid grid-cols-2 auto-cols-max mx-40 my-20 divide-x divide-dark">
+            <div className="grid grid-cols-2 auto-cols-max mx-40 my-24 divide-x divide-dark">
                 <Informational
                     title={"What's Rakeback?"}
                     content={[
@@ -52,12 +53,6 @@ function Home() {
                     about="Digital Merchant Solutions"
                 />
                 <TestimonialCard 
-                    name="Collin Moshman"
-                    imgURL={customer}
-                    statement="BigBadBabar is one of the good guys in the poker community. He has a great reputation and is someone I trust to trade and do business with."
-                    about={`Author of "Sit 'n Go Strategy"`}
-                />
-                <TestimonialCard 
                     name="ThePrezence"
                     imgURL={customer}
                     statement="I've known BigBadBabar for more than a decade and he is the most stand up and trustworthy guy I've ever met in Poker.
@@ -65,16 +60,24 @@ function Home() {
                     we staked and coached and BigBadBabar helped us out many times with all things Poker. When dealing with him, you can be confident that you're in good hands."
                     about="C Biscuit Stables"
                 />
+                <TestimonialCard 
+                    name="Collin Moshman"
+                    imgURL={customer}
+                    statement="BigBadBabar is one of the good guys in the poker community. He has a great reputation and is someone I trust to trade and do business with."
+                    about={`Author of "Sit 'n Go Strategy"`}
+                />
             </div>
-            <PageBanner
-                title={"Call to action"}
+            <ActionBanner
+                title={"Let's work together!"}
                 content={[
-                    "Like a mailing list or a contact form"
+                    "Click the button below to get in contact."
                 ]}
+                call="Get Started Now"
+                action="/contact"
             />
-            <div className="container flex mx-auto justify-content-center mb-5">
-                <input type="text" placeholder="abcdefghijklmnop"></input>
-            </div>
+            <br></br>
+            <br></br>
+            <br></br>
             <Footer />
         </React.Fragment>
         
