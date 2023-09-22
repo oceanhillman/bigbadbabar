@@ -2,6 +2,7 @@ import SocialButton from "./SocialButton";
 import xIcon from "../images/x-icon.svg";
 import skypeIcon from "../images/skype-icon.svg";
 import telegramIcon from "../images/telegram-icon.svg";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -14,7 +15,7 @@ function Footer() {
       };
 
     return (
-        <footer className="absolute inset-x-0 py-4 bg-dark">
+        <footer className="absolute inset-x-0 pt-4 bg-dark">
         <div className="container mx-auto mb-2 flex items-center justify-content-center">
             <span className="cursor-pointer font-nav no-underline text-white" onClick={scrollToTop}>
                 Back to top
@@ -38,17 +39,17 @@ function Footer() {
             />
         </div>
         <div className="container mx-auto mb-1 flex items-center justify-content-center">
-            <a className="mx-3 font-nav no-underline text-white" href="/">
+            <NavLink to="/" className="mx-3 font-nav no-underline text-white">
                 Home
-            </a>
+            </NavLink>
             <span className="text-white">•</span>
-            <a className="mx-3 font-nav no-underline text-white" href="/">
+            <NavLink to="/about " className="mx-3 font-nav no-underline text-white">
                 About
-            </a>
+            </NavLink>
             <span className="text-white">•</span>
-            <a className="mx-3 font-nav no-underline text-white" href="/">
+            <NavLink to="/contact" className="mx-3 font-nav no-underline text-white">
                 Contact
-            </a>
+            </NavLink>
         </div>
         <div className="container mx-auto flex items-center justify-content-center">
             <p className="text-light-shadow">© {currentYear} BigBadBabar</p>
