@@ -8,20 +8,20 @@ function Header() {
             <nav className="d-flex align-items-center justify-content-center text-center py-2 bg-gradient-to-b from-dark/10 to-transparent">
                 <NavButton 
                     name="About"
-                    url="/"
+                    url="/about"
                 />
                 <NavButton 
                     name="Resources"
-                    url="/"
+                    url="/resources"
                 />
                 <Brand />
                 <NavButton 
                     name="Contact"
-                    url="/"
+                    url="/contact"
                 />
                 <NavButton 
                     name="Good Stuff"
-                    url="/"
+                    url="/good-stuff"
                 />
             </nav>
         </header>
