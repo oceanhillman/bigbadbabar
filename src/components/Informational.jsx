@@ -8,9 +8,9 @@ function Informational(props) {
 
     return(
         <div className="container px-5 text-dark">
-                <h1 className="pb-3 font-title text-center font-bold">
+                <h2 className="pb-3 font-title text-center font-bold">
                     {props.title}
-                </h1>
+                </h2>
                 {body}
         </div>
     );
