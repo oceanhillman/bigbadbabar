@@ -9,7 +9,7 @@
 
 @layer base {
   body {
-    @apply !bg-keppel;
+    @apply !bg-gradient-to-b from-keppel to-teal-300 to-50%;
   }
 }
 
@@ -27,25 +27,6 @@ code {
     monospace;
 }
 
-.dropdown-item {
-  font-size: 16px;
-}
-
-.dropdown-item:hover {
-  background-color: #6da288 !important;
-}
-
-.dropdown-menu {
-  border-radius: 8px !important;
-  border: none !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #477e63 !important;
-}
-
 .carousel {
   background-color: rgba(0, 0, 0, 0.369);
-}
-
-#collapsible-nav-dropdown {
-  color: white;
 }
