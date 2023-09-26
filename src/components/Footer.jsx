@@ -16,12 +16,12 @@ function Footer() {
 
     return (
         <footer className="absolute inset-x-0 pt-4 bg-dark">
-        <div className="container mx-auto mb-2 flex items-center justify-content-center">
+        <div className="hidden sm:flex container mx-auto mb-2  items-center justify-content-center">
             <span className="cursor-pointer font-nav no-underline text-white" onClick={scrollToTop}>
                 Back to top
             </span>
         </div>
-        <div className="container mx-auto my-5 flex items-center justify-content-center">
+        <div className="container mx-auto my-1 sm:my-5 flex items-center justify-content-center">
             <SocialButton
                 type="Telegram"
                 url="https://t.me/bigbadbabar"
