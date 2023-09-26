@@ -7,7 +7,8 @@ function ContactForm() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-between container my-8 py-8 bg-gradient-to-br from-dark/10 via-dark/20 to-dark/10 shadow shadow-dark border border-dark">
+        <div className="flex flex-col items-center container py-8 bg-gradient-to-br from-dark/10 via-dark/20 to-dark/10 shadow shadow-dark border border-dark">
+            <h3 className="font-body">Send me a message</h3>
             <div className="grid grid-cols-2 gap-12">
                 <InputField
                     type="input"
@@ -27,8 +28,8 @@ function ContactForm() {
                     placeholder="Type your message here."
                 />
             </div>
-            <span className="flex flex-row font-body text-sm">
-                <input type="checkbox" className="mr-2"/>
+            <span className="flex flex-row items-center justify-center font-body text-md">
+                <input type="checkbox" className="mr-2 w-4 h-4"/>
                 Click here to receive email updates
             </span>
             <button 
