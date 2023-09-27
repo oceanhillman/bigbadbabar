@@ -7,22 +7,25 @@ function ContactForm() {
     }
 
     return (
-        <div className="flex flex-col items-center container py-8 bg-gradient-to-br from-dark/10 via-dark/20 to-dark/10 shadow shadow-dark border border-dark">
-            <h3 className="font-body">Send me a message</h3>
-            <div className="grid grid-cols-2 gap-12">
+        <div className="flex flex-col items-center container py-8 ">
+            <h1 className="font-title font-bold text-dark text-2xl sm:text-3xl">Send me a message</h1>
+            <div className="grid grid-cols-2 gap-8 w-full justify-center">
                 <InputField
                     type="input"
                     placeholder="Name"
+                    size="small"
                 />
                 <InputField
                     type="email"
                     placeholder="Email address"
+                    size="small"
                 />  
             </div>
-            <div className="grid w-full xl:px-16">
+            <div className="flex flex-col w-full justify-center">
                 <InputField
                     type="input"
                     placeholder="Subject"
+                    size="large"
                 />
                 <InputBox
                     placeholder="Type your message here."
