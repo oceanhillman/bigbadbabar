@@ -12,7 +12,7 @@ function MobileNavButton(props) {
     return(
         <Link 
             to={props.url} 
-            className={`py-2 flex flex-row text-xl font-nav font-bold bg-dark/10 no-underline border-1 border-dark ${isSelected ? "text-almost-white" : "text-dark"}`} 
+            className={`py-2 flex flex-row text-xl font-nav font-bold no-underline border-b border-dark text-almost-white hover:text-gray-200`} 
             onClick={handleClick}>
             <p className="my-0 mx-auto">
                 {props.title}
