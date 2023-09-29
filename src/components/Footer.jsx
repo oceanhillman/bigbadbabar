@@ -21,7 +21,7 @@ function Footer() {
                 Back to top
             </span>
         </div>
-        <div className="container mx-auto xl:my-5 flex items-center justify-content-center">
+        <div className="container mx-auto my-3 lg:my-5 flex items-center justify-content-center">
             <SocialButton
                 type="Telegram"
                 url="https://t.me/bigbadbabar"
