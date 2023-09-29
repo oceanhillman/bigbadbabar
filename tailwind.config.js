@@ -2,10 +2,13 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html"
+    "./public/index.html",
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '350px', // Define a custom small breakpoint
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
