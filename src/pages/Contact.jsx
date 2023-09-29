@@ -1,13 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
-import SocialButton from "../components/SocialButton";
-import telegramIcon from "../images/telegram-icon.svg";
-import xIcon from "../images/x-icon.svg";
-import skypeIcon from "../images/skype-icon.svg";
-import ActionBanner from "../components/ActionBanner";
 
 function Contact() {
     return (
