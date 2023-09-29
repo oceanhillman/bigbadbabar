@@ -33,5 +33,7 @@ code {
 }
 
 .carousel {
-  background-color: rgba(0, 0, 0, 0.369);
+  width: 100%;
+  margin-bottom: 50px;
 }
+
