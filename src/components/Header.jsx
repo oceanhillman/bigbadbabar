@@ -26,8 +26,8 @@ function Header() {
             {/* Large Header */}
             <nav className="hidden sm:flex align-items-center justify-content-center text-center py-2 bg-gradient-to-b from-dark/10 to-transparent">
                 <NavButton 
-                    name="About"
-                    url="/about"
+                    name="Home"
+                    url="/"
                 />
                 <NavButton 
                     name="Resources"
@@ -48,11 +48,10 @@ function Header() {
                 <MobileMenu />
                 <Brand />
             </nav>
-            <div className={`sm:hidden ${isOpen ? "block" : "hidden"}`}>
-                <div className="flex flex-col">
+            <div className={`sm:hidden flex flex-col border-t border-dark ${isOpen ? "block" : "hidden"} bg-gradient-to-br from-dark/20 via-dark/30 !to-dark/20`}>
                     <MobileNavButton 
-                        title="About"
-                        url="/about"
+                        title="Home"
+                        url="/"
                     />
                    <MobileNavButton 
                         title="Resources"
@@ -66,7 +65,6 @@ function Header() {
                         title="Good Stuff"
                         url="/good-stuff"
                     />
-                </div>
             </div>
         </header>
     )
