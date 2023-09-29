@@ -26,16 +26,19 @@ function Footer() {
                 type="Telegram"
                 url="https://t.me/bigbadbabar"
                 icon={telegramIcon}
+                size={8}
             />
             <SocialButton
                 type="X"
                 url="https://twitter.com/realbigbadbabar"
                 icon={xIcon}
+                size={8}
             />
             <SocialButton
                 type="Skype"
                 url="https://join.skype.com/invite/JWGmIdOskRQS"
                 icon={skypeIcon}
+                size={8}
             />
         </div>
         <div className="container mx-auto mb-1 flex items-center justify-content-center">

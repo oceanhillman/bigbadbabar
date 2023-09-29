@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function SocialButton(props) {
     return (
         <Link to={props.url} target="_blank" rel='noopener noreferrer' className="inline-block mx-4">
-            <img src={props.icon} className="w-8 h-8" alt={props.type} />
+            <img src={props.icon} className={`w-${props.size} h-${props.size}`} alt={props.type} />
         </Link>
     );
 }
