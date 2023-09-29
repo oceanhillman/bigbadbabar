@@ -22,25 +22,25 @@ function GoodStuff() {
                             type="Blogger"
                             size={16}
                         />
-                        <Link to={"http://jessetakesashot.blogspot.com"} target="_blank" rel='noopener noreferrer' className="-ml-5 text-dark font-body block">
+                        <Link to={"http://jessetakesashot.blogspot.com"} target="_blank" rel='noopener noreferrer' className="-ml-6 text-lg text-dark font-body block">
                             My friend's blog - the life and times of a SoCal pro.
                         </Link>
                     </div>
-                    <h3 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-5 mb-3 text-center">
                         Blergh! - my favorite seal video - you won't be disappointed.
-                    </h3>
+                    </h5>
                     <YoutubeEmbed embedId="3L7VJl76i9U" />
-                    <h3 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-5 mb-3 text-center">
                         Second favorite! - cute baby seal gets rescued.
-                    </h3>
+                    </h5>
                     <YoutubeEmbed embedId="dnqV1qAwpf0" />
-                    <h3 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-5 mb-3 text-center">
                         And a third! - okay look I just really like seals.
-                    </h3>
+                    </h5>
                     <YoutubeEmbed embedId="C9_UZ-8Uc2s" />
-                    <h3 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-5 mb-3 text-center">
                         Stompy Siamese - cats are cool too.
-                    </h3>
+                    </h5>
                     <YoutubeEmbed embedId="LmKx-Ut5MpU" />
                 </div>
             </div>
