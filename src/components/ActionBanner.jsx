@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 function ActionBanner(props) {
-    const body = props.content?.map(paragraph => 
-        <p className="font-body text-xl">
+    const body = props.content?.map((paragraph, index) => 
+        <p className="font-body text-xl" key={index}>
             {paragraph}
         </p>
     );
