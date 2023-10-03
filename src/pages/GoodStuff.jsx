@@ -15,7 +15,7 @@ function GoodStuff() {
                     <h1 className="text-center font-title text-dark font-bold">
                         Behold - Cool things!
                     </h1>
-                    <div className="flex flex-row items-center mt-5 mb-2">
+                    <div className="flex flex-row items-center mt-4 mb-2">
                         <SocialButton
                             icon={bloggerIcon}
                             url="http://jessetakesashot.blogspot.com/"
@@ -26,19 +26,19 @@ function GoodStuff() {
                             My friend's blog - the life and times of a SoCal pro.
                         </Link>
                     </div>
-                    <h5 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-4 mb-1 text-center">
                         Blergh! - my favorite seal video - you won't be disappointed.
                     </h5>
                     <YoutubeEmbed embedId="3L7VJl76i9U" />
-                    <h5 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-4 mb-1 text-center">
                         Second favorite! - cute baby seal gets rescued.
                     </h5>
                     <YoutubeEmbed embedId="dnqV1qAwpf0" />
-                    <h5 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-4 mb-1 text-center">
                         And a third! - okay look I just really like seals.
                     </h5>
                     <YoutubeEmbed embedId="C9_UZ-8Uc2s" />
-                    <h5 className="font-body mt-5 mb-3 text-center">
+                    <h5 className="font-body mt-4 mb-1 text-center">
                         Stompy Siamese - cats are cool too.
                     </h5>
                     <YoutubeEmbed embedId="LmKx-Ut5MpU" />
