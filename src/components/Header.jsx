@@ -4,6 +4,7 @@ import NavButton from "./NavButton";
 import Brand from "./Brand";
 import MobileNavButton from "./MobileNavButton";
 import hamburgerMenu from "../images/hamburger-menu.svg";
+import Dropdown from "./Dropdown";
 
 
 function Header() {
@@ -29,9 +30,18 @@ function Header() {
                     name="Home"
                     url="/"
                 />
-                <NavButton 
-                    name="Resources"
-                    url="/resources"
+                <Dropdown
+                    name="Poker"
+                    topItem={{name:"About Online Poker", url:"/online-poker"}}
+                    items={[
+                        {name:"Ignition Casino", url:"/ignition-casino"},
+                        {name:"America's Cardroom", url:"/americas-cardroom"},
+                        {name:"SwC Poker", url:"/swc-poker"},
+                        {name:"Poker Bros", url:"/poker-bros"},
+                        {name:"Pokerrrr 2", url:"/pokerrrr-2"},
+                        {name:"Kings Club Poker", url:"/americas-cardroom"},
+                    ]}
+                    bottomItem={{name:"International Poker", url:"/international"}}
                 />
                 <Brand />
                 <NavButton 
