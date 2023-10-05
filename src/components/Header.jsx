@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import NavButton from "./NavButton";
+import HeaderNavButton from "./HeaderNavButton";
 import Brand from "./Brand";
 import MobileNavButton from "./MobileNavButton";
 import hamburgerMenu from "../images/hamburger-menu.svg";
 import Dropdown from "./Dropdown";
+import MobileDropdown from "./MobileDropdown";
 
 
 function Header() {
@@ -26,13 +27,13 @@ function Header() {
         <header>
             {/* Large Header */}
             <nav className="hidden sm:flex align-items-center justify-content-center text-center py-2 bg-gradient-to-b from-dark/10 to-transparent">
-                <NavButton 
+                <HeaderNavButton 
                     name="Home"
                     url="/"
                 />
                 <Dropdown
                     name="Poker"
-                    topItem={{name:"About Online Poker", url:"/online-poker"}}
+                    topItem={{name:"Play Online Poker", url:"/online-poker"}}
                     items={[
                         {name:"Ignition Casino", url:"/ignition-casino"},
                         {name:"America's Cardroom", url:"/americas-cardroom"},
@@ -44,11 +45,11 @@ function Header() {
                     bottomItem={{name:"International Poker", url:"/international"}}
                 />
                 <Brand />
-                <NavButton 
+                <HeaderNavButton 
                     name="Contact"
                     url="/contact"
                 />
-                <NavButton 
+                <HeaderNavButton 
                     name="Good Stuff"
                     url="/good-stuff"
                 />
@@ -58,15 +59,24 @@ function Header() {
                 <MobileMenu />
                 <Brand />
             </nav>
-            <div className={`sm:hidden flex flex-col border-t border-dark ${isOpen ? "block" : "hidden"} bg-gradient-to-br from-dark/20 via-dark/30 !to-dark/20`}>
+            <nav className={`sm:hidden grid grid-cols-1 divide-y ${isOpen ? "block" : "hidden"} bg-keppel`}>
                     <MobileNavButton 
                         title="Home"
                         url="/"
                     />
-                   <MobileNavButton 
-                        title="Resources"
-                        url="/resources"
-                    />
+                   <MobileDropdown 
+                        title="Poker"
+                        items={[
+                            {title:"Play Online Poker", url:"/online-poker"},
+                            {title:"Ignition Casino", url:"/ignition-casino"},
+                            {title:"America's Cardroom", url:"/americas-cardroom"},
+                            {title:"SwC Poker", url:"/swc-poker"},
+                            {title:"Poker Bros", url:"/poker-bros"},
+                            {title:"Pokerrrr 2", url:"/pokerrrr-2"},
+                            {title:"Kings Club Poker", url:"/kings-club-poker"},
+                            {title:"International Poker", url:"/international"},
+                        ]}
+                   />
                     <MobileNavButton 
                         title="Contact"
                         url="/contact"
@@ -75,7 +85,7 @@ function Header() {
                         title="Good Stuff"
                         url="/good-stuff"
                     />
-            </div>
+            </nav>
         </header>
     )
 }
