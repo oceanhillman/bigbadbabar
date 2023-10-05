@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 
 function Dropdown(props) {
 
     const [isOpen, setIsOpen] = useState(false);
-    const btnRef = useRef();
 
     useEffect(() => {
         
