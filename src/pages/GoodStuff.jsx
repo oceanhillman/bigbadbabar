@@ -11,7 +11,7 @@ function GoodStuff() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <div className="flex-1">
-                <div className="flex flex-col items-center mx-auto sm:my-2 md:my-3 lg:my-4 xl:my-5 max-w-xl">
+                <div className="flex flex-col items-center mx-auto mt-4 max-w-xl">
                     <h1 className="text-center font-title text-dark font-bold">
                         Behold - Cool things!
                     </h1>
