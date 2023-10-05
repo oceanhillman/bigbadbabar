@@ -16,7 +16,7 @@ function Footer() {
 
     return (
         <footer className="pt-4 bg-dark">
-        <div className="hidden sm:flex container mx-auto mb-2  items-center justify-content-center">
+        <div className="hidden sm:flex container mb-2 items-center justify-content-center">
             <span className="cursor-pointer font-nav no-underline text-white" onClick={scrollToTop}>
                 Back to top
             </span>
@@ -46,8 +46,8 @@ function Footer() {
                 Home
             </NavLink>
             <span className="text-white">•</span>
-            <NavLink to="/about " className="mx-3 font-nav no-underline text-white">
-                About
+            <NavLink to="/online-poker " className="mx-3 font-nav no-underline text-white">
+                Online Poker
             </NavLink>
             <span className="text-white">•</span>
             <NavLink to="/contact" className="mx-3 font-nav no-underline text-white">
