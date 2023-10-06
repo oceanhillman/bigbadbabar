@@ -1,12 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Informational from "../components/Informational";
+import ActionBanner from "../components/ActionBanner";
 import PageNavButton from "../components/PageNavButton";
 import IgnitionCasino1 from "../images/ignition-casino-1.png";
 import IgnitionCasino2 from "../images/ignition-casino-2.png";
-import ActionBanner from "../components/ActionBanner";
 
 function IgnitionCasino() {
     return (
@@ -18,14 +17,14 @@ function IgnitionCasino() {
                         Ignition Casino
                     </h1>
                     <h3 className="mt-2 font-body">
-                        Big traffic, high stakes, huge tournaments, wide variety of games!
+                        Best traffic, soft games, excellent first deposit bonus...the top spot!
                     </h3>
                 </div>
-                <div className="grid grid-cols-2 gap-x-10 gap-y-10 w-full my-4 py-4 lg:px-20 px-auto bg-dark/30 lg:bg-transparent lg:bg-gradient-to-r from-dark/10 from-10% via-dark/30 to-dark/10 to-90%">
+                <div className="grid grid-cols-2 gap-x-10 gap-y-10 w-full my-2 py-4 lg:px-20 px-auto bg-dark/30 lg:bg-transparent lg:bg-gradient-to-r from-dark/10 from-10% via-dark/30 to-dark/10 to-90%">
                     <img src={IgnitionCasino1} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-end lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] shadow" />
                     <img src={IgnitionCasino2} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-start lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] shadow" />
                 </div>
-                <div className="grid grid-cols-3 max-w-6xl py-4 text-left">
+                <div className="grid grid-cols-3 gap-y-5 max-w-6xl my-5 md:mx-16 text-left">
                     <Informational
                         title="Pros" 
                         content={[
@@ -52,14 +51,14 @@ function IgnitionCasino() {
                         maxColumns={3}
                     />
                 </div>
-                <div className="mx-auto">
+                <div className="md:mx-16">
                     <h3 className="font-title">
                         Ready to play?
                     </h3>
                     <h5 className="max-w-4xl mx-auto mt-2 font-body font-bold">
                         Follow these steps to create your account.
                     </h5>
-                    <ol className="max-w-4xl mx-auto text-left font-body text-dark text-lg">
+                    <ol className="max-w-4xl mx-auto mb-5 text-left font-body text-dark text-lg">
                         <li className="my-4">
                             1) Uninstall the Ignition software if it's already on your computer.
                         </li>
@@ -87,7 +86,7 @@ function IgnitionCasino() {
                     call="Contact me"
                     actionURL="/contact"
                 />
-                <div className="flex flex-row flex-wrap justify-center gap-y-2 sm:gap-20 mt-5 mb-12">
+                <div className="flex flex-row flex-wrap justify-center gap-y-2 sm:gap-20 lg:gap-96 mt-5 mb-12">
                     <PageNavButton
                         direction="left"
                         text="Play Online Poker"
