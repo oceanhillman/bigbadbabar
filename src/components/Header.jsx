@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import HeaderNavButton from "./HeaderNavButton";
 import Brand from "./Brand";
-import MobileNavButton from "./MobileNavButton";
-import hamburgerMenu from "../images/hamburger-menu.svg";
+import HeaderNavButton from "./HeaderNavButton";
 import Dropdown from "./Dropdown";
+import MobileNavButton from "./MobileNavButton";
 import MobileDropdown from "./MobileDropdown";
-
+import hamburgerMenu from "../images/hamburger-menu.svg";
 
 function Header() {
 
@@ -17,7 +15,7 @@ function Header() {
         function handleClick() {
             setIsOpen(!isOpen);
         }
-    
+
         return(
              <img src={hamburgerMenu} className="ml-4 mr-auto justify-self-start" onClick={handleClick}/>
         )
@@ -40,7 +38,7 @@ function Header() {
                         {name:"SwC Poker", url:"/swc-poker"},
                         {name:"Poker Bros", url:"/poker-bros"},
                         {name:"Pokerrrr 2", url:"/pokerrrr-2"},
-                        {name:"Kings Club Poker", url:"/americas-cardroom"},
+                        {name:"Kings Club Poker", url:"/kings-club-poker"},
                     ]}
                     bottomItem={{name:"International Poker", url:"/international"}}
                 />
