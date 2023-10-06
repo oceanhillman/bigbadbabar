@@ -24,7 +24,7 @@ function App() {
           <Route path="poker-bros" element={<PokerBros />} />
           <Route path="pokerrrr-2" element={<Pokerrrr2 />} />
           <Route path="kings-club-poker" element={<KingsClubPoker />} />
-          <Route path="international-poker" element={<InternationalPoker />} />
+          <Route path="international" element={<InternationalPoker />} />
           <Route path="contact" element={<Contact />} />
           <Route path="good-stuff" element={<GoodStuff />} />
         </Route>
