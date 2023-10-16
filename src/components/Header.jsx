@@ -12,22 +12,18 @@ function Header() {
 
     function MobileMenu() {
 
-        function handleClick() {
-            setIsOpen(!isOpen);
-        }
+        const handleClick = () => setIsOpen(!isOpen);
 
-        return(
-             <img src={hamburgerMenu} className="ml-4 mr-auto justify-self-start" onClick={handleClick}/>
-        )
+        return (<img src={hamburgerMenu} className="justify-self-start ml-4 mr-auto " onClick={handleClick}/>);
     }
 
     return (
         <header>
             {/* Large Header */}
-            <nav className="hidden sm:flex align-items-center justify-content-center text-center py-2 bg-gradient-to-b from-dark/10 to-transparent">
+            <nav className="hidden tablet:flex align-items-center justify-content-center py-2 text-center">
                 <HeaderNavButton 
                     name="Home"
-                    url="/"
+                    path="/"
                 />
                 <Dropdown
                     name="Poker"
@@ -45,19 +41,19 @@ function Header() {
                 <Brand />
                 <HeaderNavButton 
                     name="Contact"
-                    url="/contact"
+                    path="/contact"
                 />
                 <HeaderNavButton 
                     name="Good Stuff"
-                    url="/good-stuff"
+                    path="/good-stuff"
                 />
             </nav>
             {/* Mobile Header */}
-            <nav className="grid grid-cols-5 sm:hidden align-items-center justify-center text-center py-2 bg-gradient-to-b from-dark/10 to-transparent">
+            <nav className="grid grid-cols-5 tablet:hidden align-items-center justify-center text-center py-2 bg-gradient-to-b from-dark/10 to-transparent">
                 <MobileMenu />
                 <Brand />
             </nav>
-            <nav className={`sm:hidden grid grid-cols-1 divide-y ${isOpen ? "block" : "hidden"} bg-keppel`}>
+            <nav className={`tablet:hidden grid grid-cols-1 divide-y ${isOpen ? "block" : "hidden"} bg-teal-blue`}>
                     <MobileNavButton 
                         title="Home"
                         url="/"

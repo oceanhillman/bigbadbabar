@@ -13,12 +13,12 @@ function IgnitionCasino() {
             <Header />
             <div className="flex flex-col items-center mt-4 text-center">
                 <div className="max-w-5xl">
-                    <h1 className="block text-center font-title text-dark font-bold">
+                    <h1 className="block text-center font-serif text-dark">
                         Ignition Casino
                     </h1>
-                    <h3 className="mt-2 font-body">
+                    <h5 className="mt-2 font-sans">
                         Best traffic, soft games, excellent first deposit bonus...the top spot!
-                    </h3>
+                    </h5>
                 </div>
                 <div className="grid grid-cols-2 gap-x-10 gap-y-10 w-full my-2 py-4 lg:px-20 px-auto bg-dark/30 lg:bg-transparent lg:bg-gradient-to-r from-dark/10 from-10% via-dark/30 to-dark/10 to-90%">
                     <img src={IgnitionCasino1} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-end lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] shadow" />
@@ -52,13 +52,13 @@ function IgnitionCasino() {
                     />
                 </div>
                 <div className="md:mx-16">
-                    <h3 className="font-title">
+                    <h1 className="font-serif">
                         Ready to play?
-                    </h3>
-                    <h5 className="max-w-4xl mx-auto mt-2 font-body font-bold">
+                    </h1>
+                    <h5 className="max-w-4xl mx-auto mt-2 font-sans">
                         Follow these steps to create your account.
                     </h5>
-                    <ol className="max-w-4xl mx-auto mb-5 text-left font-body text-dark text-lg">
+                    <ol className="max-w-4xl mx-auto mb-5 text-left font-sans text-dark text-lg">
                         <li className="my-4">
                             1) Uninstall the Ignition software if it's already on your computer.
                         </li>
@@ -82,11 +82,11 @@ function IgnitionCasino() {
                 </div>
                 <ActionBanner 
                     title="Need Help?"
-                    content={["Let me know if you need assistance with depositing, or if you have any questions, etc!"]}
-                    call="Contact me"
-                    actionURL="/contact"
+                    bodyText={["Let me know if you need assistance with depositing, or if you have any questions, etc!"]}
+                    buttonText="Contact me"
+                    buttonUrl="/contact"
                 />
-                <div className="flex flex-row flex-wrap justify-center gap-y-2 sm:gap-20 lg:gap-96 mt-5 mb-12">
+                <div className="flex flex-row flex-wrap justify-center gap-y-2 mobile-s:gap-1 tablet:gap-20 desktop:gap-96 mt-5 mb-12">
                     <PageNavButton
                         direction="left"
                         text="Play Online Poker"

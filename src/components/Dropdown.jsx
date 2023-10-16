@@ -29,7 +29,7 @@ function Dropdown(props) {
         <div className="relative flex flex-col items-center justify-between sm:mx-1 lg:mx-8">
             <button
                 id={props.name + "_dropdown"}
-                className="w-full flex items-center font-nav font-extrabold no-underline text-xl p-2 text-dark"
+                className="w-full flex items-center font-nav no-underline text-2xl p-2 text-dark"
                 onClick={handleClick}
                 >
                 {props.name}
@@ -42,11 +42,11 @@ function Dropdown(props) {
                 </div>
             </button>
             {isOpen ? 
-                <div className="grid grid-cols-1 divide-y px-3 divide-dark/80 absolute sm:mx-1 w-[200px] top-11 lg:mx-8 bg-myrtle drop-shadow">
+                <div className="grid grid-cols-1 divide-y px-3 divide-white-smoke absolute sm:mx-1 w-[200px] top-11 lg:mx-8 bg-teal-blue rounded-3xl shadow">
                     <div className="flex flex-col items-center py-1">
                         <Link 
                             to={props.topItem.url}
-                            className="w-full h-full py-1 font-nav font-extrabold no-underline text-lg text-almost-white hover:text-dark">
+                            className="w-full h-full py-1 font-nav no-underline text-lg text-white-smoke hover:text-dark">
                             {props.topItem.name}
                         </Link>
                     </div>
@@ -55,7 +55,7 @@ function Dropdown(props) {
                             <div className="flex flex-col items-center">
                                 <Link 
                                     to={item.url}
-                                    className="w-full h-full py-1 font-nav font-extrabold no-underline text-lg text-almost-white hover:text-dark"
+                                    className="w-full h-full py-1 font-nav no-underline text-lg text-white-smoke hover:text-dark"
                                     key={index}>
                                     {item.name}
                                 </Link>
@@ -65,7 +65,7 @@ function Dropdown(props) {
                     <div className="flex flex-col items-center py-1">
                         <Link 
                             to={props.bottomItem.url}
-                            className="w-full h-full py-1 font-nav font-extrabold no-underline text-lg text-almost-white hover:text-dark">
+                            className="w-full h-full py-1 font-nav no-underline text-lg text-white-smoke hover:text-dark">
                             {props.bottomItem.name}
                         </Link>
                     </div>

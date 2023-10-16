@@ -49,8 +49,6 @@ function ContactForm() {
                 }))
             }
         });
-        
-        
     }
 
     function checkFormCompleteness() {
@@ -62,8 +60,7 @@ function ContactForm() {
     }
 
     return (
-        <div className="flex flex-col items-center container py-8 ">
-            <h1 className="font-title font-bold text-dark text-2xl sm:text-3xl">Send me a message</h1>
+        <div className="flex flex-col items-center container">
             <div className="grid grid-cols-2 gap-8 w-full justify-center">
                 <InputField
                     id="name"
@@ -103,7 +100,7 @@ function ContactForm() {
                     highlight={isHighlighted.message}
                 />
             </div>
-            <span className="flex flex-row items-center justify-center my-3 font-body text-md">
+            <span className="flex flex-row items-center justify-center my-3 font-sans text-md">
                 <input 
                     name="updates"
                     type="checkbox" 
@@ -112,13 +109,12 @@ function ContactForm() {
                 />
                 Click here to receive email updates
             </span>
-            <span className={`${formIsIncomplete ? "block" : "hidden"} text-red-400 font-body`}>
+            <span className={`${formIsIncomplete ? "block" : "hidden"} text-red-400 font-sans`}>
                 Please fill out all of the highlighted fields.
             </span>
             <button 
-                className="mt-4 bg-almost-white hover:bg-gray-200 text-dark font-semibold py-2 px-10 border border-dark rounded-full drop-shadow-md shadow-dark"
-                onClick={handleSubmit}  
-                >
+                className="bg-teal-blue hover:bg-moonstone-blue text-almost-white font-sans font-semibold py-2 px-10 rounded-3xl"
+                onClick={handleSubmit}>
                 Submit
             </button>
         </div>

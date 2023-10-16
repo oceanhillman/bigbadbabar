@@ -28,7 +28,7 @@ function MobileDropdown(props) {
     return(
         <div className="relative flex flex-col items-center">
             <div 
-                className={`py-2 w-full flex items-center flex-row justify-center text-xl font-nav font-bold no-underline cursor-pointer text-almost-white hover:text-gray-200 bg-myrtle`} 
+                className={`py-2 w-full flex items-center flex-row justify-center text-xl font-nav font-bold no-underline cursor-pointer text-almost-white hover:text-gray-200 bg-teal-blue`} 
                 onClick={handleClick}>
                 <p className="my-0 ml-3">
                     {props.title}
