@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '350px', // Define a custom small breakpoint
+        "mobile-s": "280px",
+        "mobile-m": "375px",
+        "mobile-l": "425px",
+        "tablet": "768px",
+        "laptop": "1024px",
+        "desktop": "1280px",
       },
       colors: {
         transparent: 'transparent',
@@ -19,13 +24,16 @@ module.exports = {
         "dark": "#17252A",
         "keppel": "#3AAFA9",
         "myrtle": "#2B7A78",
+
+        "teal-blue": "#388087",
+        "moonstone-blue": "#6FB3B8",
+        "powder-blue": "#BADFE7",
+        "magic-mint": "#C2EDCE",
+        "white-smoke": "#F6F6F2",
       },
       fontFamily: {
-        "brand": "'Fugaz One'",
-        "slogan": "Courgette",
-        "nav": "Lato",
-        "body": "Roboto",
-        "title": "Tauri",
+        "brand": "'Bleqcki Trial'",
+        "nav": "'Linotte-Heavy'",
       },
     },
   },
