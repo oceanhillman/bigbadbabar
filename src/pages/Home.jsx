@@ -1,11 +1,8 @@
-import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ActionBanner from "../components/ActionBanner";
 import Testimonial from "../components/Testimonial";
-import TestimonialCard from "../components/TestimonialCard";
 import Informational from "../components/Informational";
-import customer from "../images/customer.svg";
 
 function Home() {
     return (
@@ -13,15 +10,15 @@ function Home() {
             <Header />
             <ActionBanner 
                 title={"Welcome!"}
-                content={[
+                bodyText={[
                     "Welcome to the site. It's 2023 and we're still doing this internet poker thing!",
                     "You've come to the right place for info and resources. I've been at this since 2006 and I know what's up.",
                     "We've got you covered with classic sites and new offerings.",
                 ]}
-                call="Get started!"
-                actionURL="/online-poker"
+                buttonText="Get started!"
+                buttonUrl="/online-poker"
             />
-            <div className="grid grid-cols-2 auto-cols-max mt-5 xl:mx-28 lg:divide-x divide-dark">
+            <div className="grid grid-cols-2 auto-cols-max mt-5 desktop:mx-28 tablet:divide-x divide-dark">
                 <div className="col-span-2 lg:col-span-1 px-lg-5">
                     <Informational
                         title={"What's Rakeback?"}
@@ -51,11 +48,11 @@ function Home() {
             </div>
             <ActionBanner
                 title={"Let's work together!"}
-                content={[
+                bodyText={[
                     "Click the button below to get in contact."
                 ]}
-                call="Contact me"
-                actionURL="/contact"
+                buttonText="Contact me"
+                buttonUrl="/contact"
             />
             <br></br>
             <br></br>
