@@ -12,7 +12,7 @@ function GoodStuff() {
             <Header />
             <div className="flex-1">
                 <div className="flex flex-col items-center mx-auto mt-4 max-w-xl">
-                    <h1 className="text-center font-title text-dark font-bold">
+                    <h1 className="text-center font-serif text-dark">
                         Behold - Cool things!
                     </h1>
                     <div className="flex flex-row items-center mt-4 mb-2">
