@@ -1,15 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Tauri&display=swap');
+@import url(https://fonts.cdnfonts.com/css/bleqcki-trial);
+@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);
+@import url(https://db.onlinewebfonts.com/c/86a878cb89cb2d48baa84c2bef878034?family=Linotte-Heavy);
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Tauri&display=swap);
 
 @layer base {
   body {
-    @apply !bg-gradient-to-br from-teal-300 via-cyan-300 !to-teal-300;
+    @apply !bg-white-smoke;
   }
 }
 
@@ -25,6 +25,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./images/bg-top.svg") top no-repeat, url("./images/bg-bottom.svg") bottom no-repeat;
+
 }
 
 code {
