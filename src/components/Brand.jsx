@@ -8,8 +8,8 @@ function Brand() {
                 <img className="w-[44px] h-[44px] mobile-m:w-[60px] mobile-m:h-[60px] tablet:w-20 tablet:h-20" src={Logo} id="logo" alt="Logo"></img>
             </div>
             <div>
-                <p className="relative z-1 font-brand my-0 text-xl tracking-wide tablet:text-3xl text-dark">BigBadBabar</p>
-                <p className="relative z-0 font-nav -mt-[7px] mb-0 mobile-m:font-xl font-extrabold text-teal-blue">Online Poker Resources</p>
+                <p className="relative z-0 font-brand my-0 tracking-wide tablet:text-3xl text-lg mobile-l:text-xl text-dark">BigBadBabar</p>
+                <p className="relative z-[-1] font-nav -mt-[7px] mb-0 text-sm mobile-l:text-base font-extrabold text-teal-blue">Online Poker Resources</p>
             </div>
         </NavLink>
     )
