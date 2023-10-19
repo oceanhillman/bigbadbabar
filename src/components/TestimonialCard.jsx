@@ -1,14 +1,14 @@
 
 function TestimonialCard(props) {
     return (
-        <div className="flex flex-column justify-between w-3/4 min-h-full md:w-[500px] md:h-[600px] mx-auto my-5 px-3 px-md-5 bg-almost-white/50 border-1 border-teal-blue">
-            <div className="mt-3 mt-md-5 mb-3 mb-md-4">
-                <img src={props.imgURL} className="content-start w-20 h-20 tablet:w-32 tablet:h-32 mx-auto border-2 rounded-full border-dark" alt="Testimonial profile" />
+        <div className="flex flex-column justify-between w-3/4 h-[600px] mobile-m:h-[475px] mobile-l:h-[630px] laptop:w-[500px] laptop:h-[600px] mx-auto my-5 bg-almost-white/80 shadow">
+            <div className="">
+                <img src={props.imgURL} className="w-24 h-24 tablet:w-32 tablet:h-32 mt-[20px] tablet:mt-[60px] mx-auto border-2 rounded-full border-dark" alt="Testimonial profile" />
             </div>
-            <p className="h-[350px] mobile-m:h-64 mobile-l:h-96 mt-lg-2 text-sm mobile-l:text-lg content-center font-sans text-center text-dark whitespace-pre-wrap">
+            <p className="-mt-[0px] mobile-m:mt-[10px] tablet:-mt-[50px] laptop:mt-0 px-[15px] mobile-m:px-[20px] tablet:px-[55px] text-center whitespace-pre-wrap text-sm mobile-l:text-lg tablet:text-xl font-sans text-dark ">
                 "{props.statement}"
             </p>
-            <div className="text-sm mobile-l:text-base text-center text-teal-blue font-serif">
+            <div className="text-center text-sm mobile-l:text-base font-serif text-teal-blue">
                 <p className="font-bold">
                     - {props.name}
                 </p>
