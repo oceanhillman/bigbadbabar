@@ -28,21 +28,21 @@ function MobileDropdown(props) {
     return(
         <div className="relative flex flex-col items-center">
             <div 
-                className={`py-2 w-full flex items-center flex-row justify-center text-xl font-nav font-bold no-underline cursor-pointer text-almost-white hover:text-gray-200 bg-teal-blue`} 
+                className={`py-2 w-full flex items-center flex-row justify-center text-xl font-nav font-bold no-underline cursor-pointer text-white-smoke`} 
                 onClick={handleClick}>
                 <p className="my-0 ml-3">
                     {props.title}
                 </p>
                 <div className="flex justify-center items-center ">
                 {isOpen ? (
-                    <AiFillCaretUp className="h-4" onClick={handleClick} />
+                    <AiFillCaretUp className="h-4 text-white-smoke" onClick={handleClick} />
                 ) : (
-                    <AiFillCaretDown className="h-4" onClick={handleClick} />
+                    <AiFillCaretDown className="h-4 text-white-smoke" onClick={handleClick} />
                 )}
                 </div>
             </div>
-            {isOpen ? 
-                <div className="grid grid-cols-1 w-full border-top divide-y">
+
+                <div className={`grid grid-cols-1 w-full bg-dark font-thin ${isOpen ? "h-[350px]" : "h-0"} overflow-hidden transition-all delay-150 duration-300`}>
                     {props.items.map(item => (
                         <MobileNavButton 
                         title={item.title}
@@ -51,7 +51,7 @@ function MobileDropdown(props) {
                         />
                     ))}
                 </div>
-            : null}
+
         </div>
     )
 }
