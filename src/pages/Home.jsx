@@ -15,10 +15,10 @@ function Home() {
                     "You've come to the right place for info and resources. I've been at this since 2006 and I know what's up.",
                     "We've got you covered with classic sites and new offerings.",
                 ]}
-                buttonText="Get started!"
+                buttonText="Play Online Poker!"
                 buttonUrl="/online-poker"
             />
-            <div className="grid grid-cols-2 auto-cols-max mt-5 desktop:mx-28 tablet:divide-x divide-dark">
+            <div className="grid grid-cols-2 auto-cols-max mt-5 desktop:mx-28 tablet:divide-x divide-teal-blue">
                 <div className="col-span-2 lg:col-span-1 px-lg-5">
                     <Informational
                         title={"What's Rakeback?"}
@@ -47,12 +47,12 @@ function Home() {
                 <Testimonial />
             </div>
             <ActionBanner
-                title={"Let's work together!"}
+                title={"Want to play online poker?"}
                 bodyText={[
-                    "Click the button below to get in contact."
+                    "Click the button below to learn how."
                 ]}
-                buttonText="Contact me"
-                buttonUrl="/contact"
+                buttonText="Get Started Now"
+                buttonUrl="/online-poker"
             />
             <br></br>
             <br></br>
