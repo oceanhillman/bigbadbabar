@@ -9,17 +9,7 @@ function MobileNavMenu() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    function HamburgerMenu() {
-
-        const handleClick = () => setIsOpen(!isOpen);
-
-        return (<img src={hamburgerMenuIcon} className="justify-self-start ml-4 mr-auto " onClick={handleClick}/>);
-    }
-
-    function closeMenu() {
-        setIsOpen(false);
-    }
-
+    // If menu is open, prevent scrolling the site
     useEffect(() => {
         if (isOpen) {
             document.getElementsByTagName('html')[0].style.overflow = "hidden";
@@ -28,6 +18,43 @@ function MobileNavMenu() {
             document.getElementsByTagName('html')[0].style.overflow = "scroll";
         }
     }, [isOpen]);
+
+    // Component that opens menu on click
+    function HamburgerMenu() {
+        const handleClick = () => setIsOpen(!isOpen);
+        return (<img src={hamburgerMenuIcon} className="justify-self-start ml-4 mr-auto " onClick={handleClick}/>);
+    }
+
+    function closeMenu() {
+        setIsOpen(false);
+    }
+
+    function getWindowDimensions() {
+        const { innerWidth: width, innerHeight: height } = window;
+        return {
+          width,
+          height
+        };
+    }
+      
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    // Get window dimensions when the window is resized
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // When window is resized to tablet width, close the menu
+    useEffect(() => {
+        if (windowDimensions.width >= 768) {
+            closeMenu();
+        }
+    }, [windowDimensions]);
     
     return (
         <div className="tablet:hidden">
@@ -35,7 +62,7 @@ function MobileNavMenu() {
                 <HamburgerMenu />
                 <Brand />
             </div>
-            <nav className={`z-1 fixed bottom-0 left-0 w-screen flex flex-col justify-between ${isOpen ? "h-screen " : "h-0 "} overflow-hidden transition-all delay-150 duration-300 bg-teal-blue`}>
+            <nav className={`z-1 fixed bottom-0 left-0 w-screen flex flex-col justify-between ${isOpen ? "h-screen " : "h-0 "} overflow-hidden transition-all delay-50 duration-500 bg-teal-blue`}>
                 <div className={`m-2 p-2 self-end`} onClick={closeMenu}>
                     <AiOutlineClose className="text-almost-white text-4xl" />
                 </div>
