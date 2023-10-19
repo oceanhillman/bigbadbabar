@@ -50,8 +50,6 @@ function GoodStuff() {
                     <div className="w-full h-[250px] sm:h-[300px] lg:h-[320px] rounded-3xl overflow-hidden">
                         <YoutubeEmbed embedId="LmKx-Ut5MpU" />
                     </div>
-                    <br></br>
-                    <br></br>
                 </div>
             </div>
             <Footer />

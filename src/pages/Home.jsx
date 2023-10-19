@@ -54,9 +54,6 @@ function Home() {
                 buttonText="Get Started Now"
                 buttonUrl="/online-poker"
             />
-            <br></br>
-            <br></br>
-            <br></br>
             <Footer />
         </div>
         
