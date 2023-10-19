@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Brand from "./Brand";
 import MobileNavButton from "./MobileNavButton";
 import MobileDropdown from "./MobileDropdown";
@@ -19,6 +19,15 @@ function MobileNavMenu() {
     function closeMenu() {
         setIsOpen(false);
     }
+
+    useEffect(() => {
+        if (isOpen) {
+            document.getElementsByTagName('html')[0].style.overflow = "hidden";
+        }
+        else {
+            document.getElementsByTagName('html')[0].style.overflow = "scroll";
+        }
+    }, [isOpen]);
     
     return (
         <div className="tablet:hidden">
