@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function ActionBanner(props) {
     
     return(
-        <div className="mt-2 mx-3 py-4 text-dark">
+        <div className="m-4 text-dark">
             <div className="text-center">
                 <h1 className="font-serif">
                     {props.title}
@@ -16,7 +16,7 @@ function ActionBanner(props) {
                 )}
                 
                 <Link to={props.buttonUrl}>
-                    <button className="mt-2 bg-teal-blue hover:bg-moonstone-blue text-almost-white font-semibold py-2 px-10 rounded-3xl">
+                    <button className="mt-2 bg-teal-blue hover:bg-moonstone-blue text-white font-semibold py-2 px-10 rounded-3xl">
                         {props.buttonText}
                     </button>
                 </Link>
