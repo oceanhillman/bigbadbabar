@@ -60,7 +60,7 @@ function ContactForm() {
     }
 
     return (
-        <div className="flex flex-col items-center container">
+        <div className="flex flex-col items-center container mb-4">
             <div className="grid grid-cols-2 gap-8 w-full justify-center">
                 <InputField
                     id="name"
@@ -100,7 +100,7 @@ function ContactForm() {
                     highlight={isHighlighted.message}
                 />
             </div>
-            <span className="flex flex-row items-center justify-center my-3 font-sans text-md">
+            <span className="flex flex-row items-center justify-center mt-3 font-sans text-md">
                 <input 
                     name="updates"
                     type="checkbox" 
@@ -109,9 +109,9 @@ function ContactForm() {
                 />
                 Click here to receive email updates
             </span>
-            <span className={`${formIsIncomplete ? "block" : "hidden"} text-red-400 font-sans`}>
-                Please fill out all of the highlighted fields.
-            </span>
+
+            {formIsIncomplete ? <span className="text-red-400 font-sans mb-2">"Please fill out all of the highlighted fields."</span> : <span className="mb-2">&nbsp;</span>}
+
             <button 
                 className="bg-teal-blue hover:bg-moonstone-blue text-almost-white font-sans font-semibold py-2 px-10 rounded-3xl"
                 onClick={handleSubmit}>
