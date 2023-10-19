@@ -15,7 +15,7 @@ function PageNavButton(props) {
     else {
         return (
             <Link to={props.url} className="no-underline">
-                <button className="flex justify-center items-center w-48 py-[10px] pr-1 pl-2 font-nav text-almost-white bg-dark rounded-3xl">
+                <button className="flex justify-center items-center w-48 py-[10px] pr-1 pl-2 font-nav font-semibold text-almost-white bg-dark rounded-3xl">
                     {props.text}
                     <AiFillCaretRight />
                 </button>
