@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html",
@@ -36,6 +37,10 @@ module.exports = {
         "nav": "'Linotte-Heavy'",
       },
     },
+    variants: {
+      margin: ['responsive', 'hover'],
+      text: ["hover"],
+    }
   },
   plugins: [],
 }
