@@ -26,10 +26,10 @@ function Dropdown(props) {
     }
 
     return (
-        <div className="relative flex flex-col items-center justify-between sm:mx-1 lg:mx-8">
+        <div className="relative mx-2 p-2 laptop:w-[160px]">
             <button
                 id={props.name + "_dropdown"}
-                className="w-full flex items-center font-nav no-underline text-2xl p-2 text-dark"
+                className={`w-full flex justify-center items-center font-nav no-underline text-2xl hover:text-teal-blue ${isOpen ? "text-teal-blue" : "text-dark"}`}
                 onClick={handleClick}
                 >
                 {props.name}
@@ -42,7 +42,7 @@ function Dropdown(props) {
                 </div>
             </button>
             {isOpen ? 
-                <div className="grid grid-cols-1 divide-y px-3 divide-white-smoke absolute sm:mx-1 w-[200px] top-11 lg:mx-8 bg-teal-blue rounded-3xl shadow">
+                <div className="grid grid-cols-1 divide-y px-3 divide-white-smoke absolute w-[200px] right-[-45px] laptop:right-[-15px] bg-teal-blue rounded-3xl shadow">
                     <div className="flex flex-col items-center py-1">
                         <Link 
                             to={props.topItem.url}
