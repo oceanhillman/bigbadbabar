@@ -62,7 +62,7 @@ function MobileNavMenu() {
                 <HamburgerMenu />
                 <Brand />
             </div>
-            <nav className={`z-1 fixed bottom-0 left-0 w-screen flex flex-col justify-between ${isOpen ? "h-screen " : "h-0 "} overflow-hidden transition-all delay-50 duration-500 bg-teal-blue`}>
+            <nav className={`z-1 fixed top-0 left-0 w-screen flex flex-col justify-between ${isOpen ? "h-screen " : "h-0 "} overflow-hidden transition-all delay-50 duration-500 bg-teal-blue`}>
                 <div className={`m-2 p-2 self-end`} onClick={closeMenu}>
                     <AiOutlineClose className="text-almost-white text-4xl" />
                 </div>
