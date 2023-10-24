@@ -8,7 +8,7 @@ function Informational(props) {
             </h2>
             
             {props.content?.map((paragraph, index) => 
-                <p className="font-sans text-xl" key={index}>
+                <p className="font-sans text-xl text-center" key={index}>
                     {paragraph}
                 </p>
             )}
