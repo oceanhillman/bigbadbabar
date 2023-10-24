@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Informational from "../components/Informational";
-import ActionBanner from "../components/ActionBanner";
+import CtaBanner from "../components/CtaBanner";
 import PageNavButton from "../components/PageNavButton";
 import IgnitionCasino1 from "../images/ignition-casino-1.png";
 import IgnitionCasino2 from "../images/ignition-casino-2.png";
@@ -20,9 +20,9 @@ function IgnitionCasino() {
                         Best traffic, soft games, excellent first deposit bonus...the top spot!
                     </h5>
                 </div>
-                <div className="grid grid-cols-2 gap-x-10 gap-y-10 w-full my-2 py-4 lg:px-20 px-auto bg-dark/30 lg:bg-transparent lg:bg-gradient-to-r from-dark/10 from-10% via-dark/30 to-dark/10 to-90%">
-                    <img src={IgnitionCasino1} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-end lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] shadow" />
-                    <img src={IgnitionCasino2} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-start lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] shadow" />
+                <div className="grid grid-cols-2 gap-x-10 gap-y-10 w-full my-2 py-4 lg:px-20 px-auto bg-moonstone-blue">
+                    <img src={IgnitionCasino1} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-end lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] " />
+                    <img src={IgnitionCasino2} className="col-span-2 lg:col-span-1 place-self-center lg:place-self-start lg:mx-0 w-full h-full sm:h-[300px] sm:w-[500px] " />
                 </div>
                 <div className="grid grid-cols-3 gap-y-5 max-w-6xl my-5 md:mx-16 text-left">
                     <Informational
@@ -80,8 +80,8 @@ function IgnitionCasino() {
                         </li>
                     </ol>
                 </div>
-                <ActionBanner 
-                    title="Need Help?"
+                <CtaBanner 
+                    title="Need help?"
                     bodyText={["Let me know if you need assistance with depositing, or if you have any questions, etc!"]}
                     buttonText="Contact me"
                     buttonUrl="/contact"

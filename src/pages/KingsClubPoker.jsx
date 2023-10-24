@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Informational from "../components/Informational";
-import ActionBanner from "../components/ActionBanner";
+import CtaBanner from "../components/CtaBanner";
 import PageNavButton from "../components/PageNavButton";
 import kingsClub1 from "../images/kings-club-poker-1.png";
 import kingsClub2 from "../images/kings-club-poker-2.png";
@@ -63,7 +63,7 @@ function Pokerrrr2() {
                         </li>
                     </ol>
                 </div>
-                <ActionBanner 
+                <CtaBanner 
                     title="Need Help?"
                     content={["Let me know if you need assistance with depositing, or if you have any questions, etc!"]}
                     call="Contact me"

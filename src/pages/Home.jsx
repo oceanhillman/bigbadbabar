@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ActionBanner from "../components/ActionBanner";
+import CtaBanner from "../components/CtaBanner";
 import Testimonial from "../components/Testimonial";
 import Informational from "../components/Informational";
 
@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="flex flex-col min-h-screen max-w-screen">
             <Header />
-            <ActionBanner 
+            <CtaBanner 
                 title={"Welcome!"}
                 bodyText={[
                     "Welcome to the site. It's 2023 and we're still doing this internet poker thing!",
@@ -46,7 +46,7 @@ function Home() {
             <div className="flex flex-col justify-content-center items-center">
                 <Testimonial />
             </div>
-            <ActionBanner
+            <CtaBanner
                 title={"Want to play online poker?"}
                 bodyText={[
                     "Click the button below to learn how."

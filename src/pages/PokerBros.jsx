@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Informational from "../components/Informational";
-import ActionBanner from "../components/ActionBanner";
+import CtaBanner from "../components/CtaBanner";
 import PageNavButton from "../components/PageNavButton";
 import pokerBros1 from "../images/poker-bros-1.png";
 import pokerBros2 from "../images/poker-bros-2.png";
@@ -64,7 +64,7 @@ function PokerBros() {
                         </li>
                     </ol>
                 </div>
-                <ActionBanner 
+                <CtaBanner 
                     title="Need Help?"
                     content={["Let me know if you need assistance with depositing, or if you have any questions, etc!"]}
                     call="Contact me"

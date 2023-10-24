@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function ActionBanner(props) {
+function CtaBanner(props) {
     
     return(
         <div className="m-4 text-dark">
@@ -25,4 +25,4 @@ function ActionBanner(props) {
     );
 }
 
-export default ActionBanner;
+export default CtaBanner;
