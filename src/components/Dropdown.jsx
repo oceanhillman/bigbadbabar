@@ -44,7 +44,7 @@ function Dropdown(props) {
             {isOpen ? 
                 <div className="grid grid-cols-1 divide-y px-3 divide-white-smoke absolute w-[200px] right-[-45px] laptop:right-[-15px] bg-teal-blue rounded-3xl shadow">
                     <div className="flex flex-col items-center py-1">
-                        <Link 
+                        <Link reloadDocument
                             to={props.topItem.url}
                             className="w-full h-full py-1 font-nav no-underline text-lg text-white-smoke hover:text-dark">
                             {props.topItem.name}
@@ -53,7 +53,7 @@ function Dropdown(props) {
                     <div className="">
                         {props.items.map((item, index) => (
                             <div className="flex flex-col items-center">
-                                <Link 
+                                <Link reloadDocument
                                     to={item.url}
                                     className="w-full h-full py-1 font-nav no-underline text-lg text-white-smoke hover:text-dark"
                                     key={index}>
@@ -63,7 +63,7 @@ function Dropdown(props) {
                         ))}
                     </div>
                     <div className="flex flex-col items-center py-1">
-                        <Link 
+                        <Link reloadDocument
                             to={props.bottomItem.url}
                             className="w-full h-full py-1 font-nav no-underline text-lg text-white-smoke hover:text-dark">
                             {props.bottomItem.name}

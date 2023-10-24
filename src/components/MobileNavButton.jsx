@@ -10,7 +10,7 @@ function MobileNavButton(props) {
     }
 
     return(
-        <Link 
+        <Link reloadDocument
             to={props.url} 
             className={`py-2 flex flex-row text-xl font-nav no-underline text-white-smoke cursor-pointer font-bold`} 
             onClick={handleClick}>
