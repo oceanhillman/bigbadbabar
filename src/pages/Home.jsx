@@ -18,7 +18,7 @@ function Home() {
                 buttonText="Play Online Poker!"
                 buttonUrl="/online-poker"
             />
-            <div className="grid grid-cols-2 auto-cols-max mt-5 desktop:mx-28 tablet:divide-x divide-teal-blue">
+            <div className="grid grid-cols-2 auto-cols-max gap-y-5 mt-5 desktop:mx-28 tablet:divide-x divide-teal-blue">
                 <div className="col-span-2 lg:col-span-1 px-lg-5">
                     <Informational
                         title={"What's Rakeback?"}
