@@ -41,17 +41,15 @@ function MobileDropdown(props) {
                 )}
                 </div>
             </div>
-
-                <div className={`grid grid-cols-1 w-full bg-dark font-thin ${isOpen ? "h-[350px]" : "h-0"} overflow-hidden transition-all delay-100 duration-300`}>
-                    {props.items.map(item => (
-                        <MobileNavButton 
-                        title={item.title}
-                        url={item.url}
-                        type="submenu"
-                        />
-                    ))}
-                </div>
-
+            <div className={`grid grid-cols-1 w-full bg-dark font-thin ${isOpen ? "h-[350px]" : "h-0"} overflow-hidden transition-all delay-100 duration-300`}>
+                {props.items.map(item => (
+                    <MobileNavButton 
+                    title={item.title}
+                    url={item.url}
+                    type="submenu"
+                    />
+                ))}
+            </div>
         </div>
     )
 }
