@@ -5,7 +5,7 @@ function TestimonialCard(props) {
             <div className="">
                 <img src={props.imgURL} className="w-24 h-24 tablet:w-32 tablet:h-32 mt-[20px] tablet:mt-[60px] mx-auto border-2 rounded-full border-dark" alt="Testimonial profile" />
             </div>
-            <p className="-mt-[0px] mobile-m:mt-[10px] tablet:-mt-[50px] laptop:mt-0 px-[15px] mobile-m:px-[20px] tablet:px-[55px] text-center whitespace-pre-wrap text-sm mobile-l:text-lg tablet:text-xl font-sans text-dark ">
+            <p className="-mt-[0px] mobile-m:mt-[10px] tablet:-mt-[50px] laptop:mt-0 px-[15px] mobile-m:px-[20px] tablet:px-[55px] text-center whitespace-pre-wrap tablet:text-xl font-sans text-dark ">
                 "{props.statement}"
             </p>
             <div className="text-center text-sm mobile-l:text-base font-serif text-teal-blue">

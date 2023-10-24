@@ -22,29 +22,29 @@ function GoodStuff() {
                             type="Blogger"
                             size={16}
                         />
-                        <Link to={"http://jessetakesashot.blogspot.com"} target="_blank" rel='noopener noreferrer' className="-ml-6 text-dark font-sans text-xl block">
+                        <Link to={"http://jessetakesashot.blogspot.com"} target="_blank" rel='noopener noreferrer' className="-ml-6 text-dark font-sans tablet:text-xl block">
                             My friend's blog - the life and times of a SoCal pro.
                         </Link>
                     </div>
-                    <p className="font-sans mt-4 mb-1 text-center text-xl">
+                    <p className="font-sans mt-4 mb-1 text-center tablet:text-xl">
                         Blergh! - my favorite seal video - you won't be disappointed.
                     </p>
                     <div className="w-full h-[250px] sm:h-[300px] lg:h-[320px] rounded-3xl overflow-hidden">
                         <YoutubeEmbed embedId="3L7VJl76i9U" />
                     </div>
-                    <p className="font-sans mt-4 mb-1 text-center text-xl">
+                    <p className="font-sans mt-4 mb-1 text-center tablet:text-xl">
                         Second favorite! - cute baby seal gets rescued.
                     </p>
                     <div className="w-full h-[250px] sm:h-[300px] lg:h-[320px] rounded-3xl overflow-hidden">
                         <YoutubeEmbed embedId="dnqV1qAwpf0" />
                     </div>
-                    <p className="font-sans mt-4 mb-1 text-center text-xl">
+                    <p className="font-sans mt-4 mb-1 text-center tablet:text-xl">
                         And a third! - okay look I just really like seals.
                     </p>
                     <div className="w-full h-[250px] sm:h-[300px] lg:h-[320px] rounded-3xl overflow-hidden">
                         <YoutubeEmbed embedId="C9_UZ-8Uc2s" />
                     </div>
-                    <p className="font-sans mt-4 mb-1 text-center text-xl">
+                    <p className="font-sans mt-4 mb-1 text-center tablet:text-xl">
                         Stompy Siamese - cats are cool too.
                     </p>
                     <div className="w-full h-[250px] sm:h-[300px] lg:h-[320px] rounded-3xl overflow-hidden">

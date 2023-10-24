@@ -10,7 +10,7 @@ function ActionBanner(props) {
                 </h1>
 
                 {props.bodyText?.map((paragraph, index) => 
-                    <p className="my-[10px] font-sans text-xl" key={index}>
+                    <p className="my-[10px] font-sans tablet:text-xl" key={index}>
                         {paragraph}
                     </p>
                 )}
