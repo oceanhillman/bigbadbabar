@@ -35,6 +35,8 @@ module.exports = {
       fontFamily: {
         "brand": "'Bleqcki Trial'",
         "nav": "'Linotte-Heavy'",
+        "body": "Lato",
+        "title": "'DM Serif Display'",
       },
     },
     variants: {
