@@ -11,7 +11,7 @@ function OnlinePoker() {
             <Header />
             <div className="flex-1 self-center max-w-4xl">
                 <div className="flex flex-col items-center mt-4 text-center">
-                    <h1 className="my-4 text-center font-serif text-dark">
+                    <h1 className="my-4 text-center font-nav text-dark">
                         Play Online Poker
                     </h1>
                     <Informational 
