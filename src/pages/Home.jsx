@@ -8,30 +8,32 @@ function Home() {
     return (
         <div className="flex flex-col min-h-screen max-w-screen">
             <Header />
-            <CtaBanner 
-                title={"Welcome!"}
-                bodyText={[
-                    "Welcome to the site. It's 2023 and we're still doing this internet poker thing!",
-                    "You've come to the right place for info and resources. I've been at this since 2006 and I know what's up.",
-                    "We've got you covered with classic sites and new offerings.",
-                ]}
-                buttonText="Play Online Poker!"
-                buttonUrl="/online-poker"
-            />
-            <div className="grid grid-cols-2 auto-cols-max gap-y-5 mt-5 desktop:mx-28 tablet:divide-x divide-teal-blue">
-                <div className="col-span-2 lg:col-span-1 px-lg-5">
+            <div className="desktop:mt-4 mb-4">
+                <CtaBanner 
+                    title={"Welcome!"}
+                    bodyText={[
+                        "Welcome to the site. It's 2023 and we're still doing this internet poker thing!",
+                        "You've come to the right place for info and resources. I've been at this since 2006 and I know what's up.",
+                        "We've got you covered with classic sites and new offerings.",
+                    ]}
+                    buttonText="Play Online Poker!"
+                    buttonUrl="/online-poker"
+                />
+            </div>
+            <div className="grid tablet:grid-cols-2 gap-y-5 tablet:mt-5 desktop:mx-[80px] tablet:divide-x divide-teal-blue">
+                <div className="desktop:pr-[50px]">
                     <Informational
                         title={"What's Rakeback?"}
                         content={[
                             "In any poker room - live or online - the house keeps a share of each pot.  This is the rake, and is the house's way of getting paid.",
                             "In brick-and-mortar casinos, this money is gone (except for a promo or lucky jackpot).",
                             "In online poker, however, the sites give some of this money back to you, as a reward and an incentive. This rakeback can have a big impact on your bottom line.",
-                            "While it isn't the only factor you should weigh when choosing a site, rakeback is important. Different sites give back different percentages, and they have different bonuses and promos that can boost your bankroll. Let's compare everything and find the best spot for you."
+                            "While it isn't the only factor you should weigh when choosing a site, rakeback is important. Different sites give back different percentages, and they have different bonuses and promos that can boost your bankroll.",
+                            "Let's compare everything and find the best spot for you."
                         ]}
-                        maxColumns={2}
                     />
                 </div>
-                <div className="col-span-2 lg:col-span-1 px-lg-5">
+                <div className="desktop:pl-[50px]">
                     <Informational
                         title={"What's an Affiliate?"}
                         content={[
@@ -43,7 +45,7 @@ function Home() {
                     />
                 </div>
             </div>
-            <div className="flex flex-col justify-content-center items-center">
+            <div className="flex flex-col justify-content-center items-center tablet:my-4">
                 <Testimonial />
             </div>
             <CtaBanner
