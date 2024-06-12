@@ -22,6 +22,7 @@ function InternationalPoker() {
                 />
                 <PhotoBanner
                     images={[bodog, ignitionCasino]}
+                    captions={["Bodog - Game Interface", "Ignition Casino - Lobby"]}
                 />
                 <ProsAndCons
                     pros={[

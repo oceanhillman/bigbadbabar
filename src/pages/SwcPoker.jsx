@@ -22,6 +22,7 @@ function SwcPoker() {
                 />
                 <PhotoBanner
                     images={[swcPoker1, swcPoker2]}
+                    captions={["SwC Poker - Lobby", "SwC Poker - Game Interface"]}
                 />
                 <ProsAndCons
                     pros={[

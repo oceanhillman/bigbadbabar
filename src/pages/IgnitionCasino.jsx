@@ -22,6 +22,7 @@ function IgnitionCasino() {
                 />
                 <PhotoBanner
                     images={[IgnitionCasino1, IgnitionCasino2]}
+                    captions={["Ignition Casino - Lobby", "Ignition Casino - Game Interface"]}
                 />
                 <ProsAndCons
                     pros={[

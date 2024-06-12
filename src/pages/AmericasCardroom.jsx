@@ -22,6 +22,7 @@ function AmericasCardroom() {
                 />
                 <PhotoBanner
                     images={[AmericasCardroom1, AmericasCardroom2]}
+                    captions={["America's Cardroom - Lobby", "America's Cardroom - Game Interface"]}
                 />
                 <ProsAndCons
                     pros={[

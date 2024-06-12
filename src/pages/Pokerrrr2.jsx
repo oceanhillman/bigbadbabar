@@ -22,6 +22,7 @@ function Pokerrrr2() {
                 />
                 <PhotoBanner
                     images={[pokerrrr21, pokerrrr22]}
+                    captions={["Pokerrrr2 - Lobby", "Pokerrrr2 - Game Interface"]}
                 />
                 <ProsAndCons
                     pros={[
